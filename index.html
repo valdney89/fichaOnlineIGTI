@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+
+    <!-- style css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>IGTI - Ficha Online | Valdney Nogueira</title>
+  </head>
+  <body>
+    <!-- inicio header -->
+    <header class="container header__topo">
+      <h1 class="header__logo">O Arcano</h1>
+      <nav class="header__nav">
+        <ul class="header__nav--itens">
+          <li class="header__nav--item"><a href="#">Ficha Online</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- fim header -->
+    <main>
+      <!-- inicio banner superior -->
+      <section id="banner-superior">
+        <div class="banner__chamada">
+          <h2 class="banner__chamada--titulo">Ficha de Personagem Online</h2>
+          <p class="banner__chamada--descricao">
+            Eu combato fogo com fogo mágico
+          </p>
+        </div>
+        <picture class="banner__img">
+          <img src="img/castelo.jpg" alt="castelo em ruinas" />
+        </picture>
+      </section>
+      <!-- fim banner superior -->
+      <section class="info-destacadas container">
+        <!-- inicio destaques -->
+        <div class="info-destacadas__avatar">
+          <picture>
+            <img src="img/humano_arqueiro.jpeg" alt="avatar" />
+          </picture>
+        </div>
+        <div class="info-destacadas__sobre">
+          <div class="info-destacadas__sobre--nivel">Nível <span>01</span></div>
+          <div class="info-destacadas__sobre--dano">
+            <div class="progress">
+              <div
+                class="progress-bar bg-danger"
+                role="progressbar"
+                style="width: 75%;"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- fim destaque -->
+      <section id="corpo" class="container">
+        <!-- inicio preenchimento da ficha -->
+        <article class="menu-esquerdo">
+          <!-- inicio menu esquerdo -->
+          <h4>Helper</h4>
+          <ul>
+            <li data-toggle="modal" data-target="#criacaoCacador">
+              Criação do caçador
+            </li>
+            <li data-toggle="modal" data-target="#apresentacoes">
+              Apresentações
+            </li>
+            <li>Histórico</li>
+            <li>Subindo de Nível</li>
+          </ul>
+        </article>
+        <!-- fim menu esquerdo -->
+        <article class="ficha">
+          <!-- inicio ficha -->
+          <div class="aparencia">
+            <!-- inicio aparencia -->
+            <h3>Aparência</h3>
+            <div class="aparencia__nome-personagem">
+              <label for="nome-personagem">Nome</label>
+              <input
+                id="nome-personagem"
+                type="text"
+                placeholder="Informe o nome do personagem"
+              />
+            </div>
+            <div class="aparencia-sexo-olhos-roupas">
+              <div class="aparencia__sexo">
+                <p>Sexo</p>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="masculino"
+                    name="sexo"
+                    value="masculino"
+                    checked
+                  />
+                  <label for="masculino">Masculino</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="feminino"
+                    name="sexo"
+                    value="feminino"
+                  />
+                  <label for="feminino">Feminino</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="androgino"
+                    name="sexo"
+                    value="androgino"
+                  />
+                  <label for="androgino">Andrógino</label>
+                </div>
+              </div>
+
+              <div class="aparencia__olhos">
+                <p>Olhos</p>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="olhosSombrios"
+                    name="olhos"
+                    value="olhosSombrios"
+                    checked
+                  />
+                  <label for="olhosSombrios">Olhos Sombrios</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="olhosFerozes"
+                    name="olhos"
+                    value="olhosFerozes"
+                  />
+                  <label for="olhosFerozes">Olhos Ferozes</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="olhosCansados"
+                    name="olhos"
+                    value="olhosCansados"
+                  />
+                  <label for="olhosCansados">Olhos Cansados</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="olhosFaiscantes"
+                    name="olhos"
+                    value="olhosFaiscantes"
+                  />
+                  <label for="olhosFaiscantes">Olhos Faiscantes</label>
+                </div>
+              </div>
+
+              <div class="aparencia__roupas">
+                <p>Roupas</p>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="roupasAmarrotadas"
+                    name="roupas"
+                    value="roupasAmarrotadas"
+                    checked
+                  />
+                  <label for="roupasAmarrotadas">Roupas amarrotadas</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="roupasEstilosas"
+                    name="roupas"
+                    value="roupasEstilosas"
+                  />
+                  <label for="roupasEstilosas">Roupas estilosas</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="roupasGoticas"
+                    name="roupas"
+                    value="roupasGoticas"
+                  />
+                  <label for="roupasGoticas">Roupas góticas</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="roupasAntiquadas"
+                    name="roupas"
+                    value="roupasAntiquadas"
+                  />
+                  <label for="roupasAntiquadas">Roupas antiquadas</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fim aparencia -->
+
+          <div class="caracteristicas">
+            <h3>Características</h3>
+            <div class="caracteristicas__atributos">
+              <div class="form-group">
+                <div class="caracteristicas__atributos--atributo">
+                  <label for="formControlRange">Braveza</label>
+                  <div class="caracteristicas__atributos--descricao">
+                    <p>Partir para a porrada</p>
+                    <p>Proteger alguém</p>
+                  </div>
+                </div>
+                <input
+                  type="range"
+                  class="form-control-range"
+                  id="formControlRange"
+                  min="0"
+                  step="1"
+                  max="5"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="caracteristicas__atributos">
+              <div class="form-group">
+                <div class="caracteristicas__atributos--atributo">
+                  <label for="formControlRange">Esperteza</label>
+                  <div class="caracteristicas__atributos--descricao">
+                    <p>Investigar um mistério</p>
+                    <p>Perceber uma enrascada</p>
+                  </div>
+                </div>
+                <input
+                  type="range"
+                  class="form-control-range"
+                  id="formControlRange"
+                  min="0"
+                  step="1"
+                  max="5"
+                  value="0"
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- fim ficha -->
+      </section>
+      <!-- fim preenchimento da ficha -->
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="criacaoCacador"
+      tabindex="-1"
+      aria-labelledby="criacaoCacador"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="criacaoCacadorLabel">
+              Criação do Caçador
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Para criar seu caçador Arcano, primeiro escolha e escreva um nome na
+            primeira linha da folha. Então siga as instruções para decidir sua
+            aparência, classificações, magia combativa, movimentos e
+            equipamentos. Finalmente, se apresente e escolha o histórico.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal Criação do Caçador -->
+
+    <div
+      class="modal fade"
+      id="apresentacoes"
+      tabindex="-1"
+      aria-labelledby="apresentacoes"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="apresentacoesLabel">
+              Apresentações
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Quando você chegar aqui, espere que todos também cheguem para que
+            vocês se apresentem juntos. Na sua vez descreva seu caçador e diga
+            ao grupo o que eles sabem sobre você.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal apresentação -->
+    <footer></footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

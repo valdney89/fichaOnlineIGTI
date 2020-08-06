@@ -1,0 +1,43 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Red Rose', cursive;
+  color: #ececec;
+  background-color: #1d1d1d;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h3 {
+  border-bottom: 2px solid #a872b1;
+}
+
+a {
+  color: #a872b1;
+  text-decoration: none;
+  transition: font-weight 0.2s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 2px solid;
+  color: #a872b1;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.modal-title {
+  color: #444;
+  text-transform: uppercase;
+}
+
+.modal-body {
+  color: #444;
+}
+/*# sourceMappingURL=geral.css.map */
